@@ -2,7 +2,7 @@
 FROM registry.access.redhat.com/ubi9/ubi-minimal AS builder
 
 # Instala o gettext (que contém o envsubst) de forma nativa na arquitetura RHEL
-RUN microdnf install -y gettext
+RUN microdnf install -y gettext && microdnf clean all
 
 # Estágio 2: Imagem Final do Keycloak
 FROM quay.io/keycloak/keycloak:26.0
