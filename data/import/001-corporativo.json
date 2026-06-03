@@ -89,20 +89,10 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "http://localhost:5173/*",
-        "https://localhost:5173/*",
-        "http://localhost/*",
-        "https://localhost/*",
-        "http://163.176.140.254/*",
-        "https://163.176.140.254/*"
+        "${APP_URL}/*"
       ],
       "webOrigins": [
-        "http://localhost:5173",
-        "https://localhost:5173",
-        "http://localhost",
-        "https://localhost",
-        "http://163.176.140.254/*",
-        "https://163.176.140.254/*"
+        "${APP_URL}"
       ],
       "notBefore": 0,
       "bearerOnly": false,
